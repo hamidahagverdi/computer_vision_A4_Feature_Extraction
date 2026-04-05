@@ -1,5 +1,4 @@
-# computer_vision_A4_Feature_Extraction
-# Computer Vision Assignment
+# Computer Vision Assignment Feature_Extraction
 
 A Python-based computer vision project covering edge detection, corner detection,
 line/circle detection, active contours (snakes), and interest point matching with ORB.
