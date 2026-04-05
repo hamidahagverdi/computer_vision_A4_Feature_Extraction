@@ -65,7 +65,7 @@ Three methods are compared side-by-side:
 |---|---|---|
 | **Sobel** | First-order gradient magnitude `√(Gx²+Gy²)` | Thick edges, sensitive to noise |
 | **Laplacian of Gaussian (LoG)** | Second derivative after Gaussian blur | Amplifies noise; blurry edges |
-| **Canny** ✅ *chosen* | Gaussian blur → gradient → NMS → hysteresis | Needs two threshold parameters |
+| **Canny**  *chosen* | Gaussian blur → gradient → NMS → hysteresis | Needs two threshold parameters |
 
 **Why Canny is best:** It applies Gaussian blur to suppress noise, then non-maximum
 suppression (NMS) to thin edges to exactly 1 pixel, then hysteresis thresholding to keep
@@ -82,7 +82,7 @@ Output files:
 | Method | Score function | Result |
 |---|---|---|
 | **Harris** | `R = det(M) − k·trace(M)²` | Very sensitive; detects many corner pixels |
-| **Shi-Tomasi** ✅ *preferred* | `R = min(λ₁, λ₂)` | Cleaner, well-separated corners |
+| **Shi-Tomasi**  *preferred* | `R = min(λ₁, λ₂)` | Cleaner, well-separated corners |
 
 Harris marks pixels red where the response exceeds 1 % of its global maximum.  
 Shi-Tomasi returns up to 120 well-separated corners drawn as green circles.
